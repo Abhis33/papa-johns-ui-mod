@@ -7,6 +7,13 @@ React.js
 # APIS
 We will be using papa johns' public apis that are used by their webapp
 
+# [Testing] Color Pallette
+
+- Background - #F8EDED
+- Primary 1 - #B43F3F
+- Primary 2 - #FF8225
+- Text - #173B45
+
 ## Menu URL API
 
 https://www.papajohns.com/omni/api/trpc/menuCategory.getByStore?input=%7B%22json%22%3A%7B%22storeId%22%3A0%7D%7D
