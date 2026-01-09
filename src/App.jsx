@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 
 const MENU_API_URL =
-  'https://www.papajohns.com/omni/api/trpc/menuCategory.getByStore?input=%7B%22json%22%3A%7B%22storeId%22%3A0%7D%7D';
+  '/api/omni/api/trpc/menuCategory.getByStore?input=%7B%22json%22%3A%7B%22storeId%22%3A0%7D%7D';
 
 const PAPA_JOHNS_ASSET_BASE = 'https://www.papajohns.com';
 
