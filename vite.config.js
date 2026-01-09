@@ -9,6 +9,7 @@ export default defineConfig({
         target: 'https://www.papajohns.com',
         changeOrigin: true,
         secure: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
         headers: {
           accept: '*/*',
           'accept-language': 'en-US,en;q=0.9',
