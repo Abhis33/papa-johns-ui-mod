@@ -1,0 +1,267 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #173b45;
+  background-color: #f8eded;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f8eded;
+  color: #173b45;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.hero {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  color: #b43f3f;
+  margin-bottom: 0.5rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-bottom: 1rem;
+  color: #173b45;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.primary-btn,
+.ghost-btn,
+.menu-card__footer button {
+  border-radius: 999px;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: #b43f3f;
+  color: #f8eded;
+}
+
+.ghost-btn {
+  background-color: transparent;
+  color: #b43f3f;
+  border: 2px solid #b43f3f;
+}
+
+.hero-card {
+  background: linear-gradient(135deg, rgba(255, 130, 37, 0.18), rgba(180, 63, 63, 0.15));
+  border-radius: 24px;
+  padding: 2rem;
+  border: 1px solid rgba(23, 59, 69, 0.1);
+  box-shadow: 0 18px 40px rgba(23, 59, 69, 0.08);
+}
+
+.hero-card__content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #b43f3f;
+}
+
+.hero-card__content p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hero-tags span {
+  background-color: #ff8225;
+  color: #f8eded;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.category-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.category-nav a {
+  text-decoration: none;
+  color: #173b45;
+  background-color: #ffffff;
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  border: 1px solid rgba(23, 59, 69, 0.15);
+  font-weight: 600;
+}
+
+.status {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(23, 59, 69, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.status-error {
+  border-color: rgba(180, 63, 63, 0.5);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-header img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #b43f3f;
+  background-color: #ffffff;
+}
+
+.section-header h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-section {
+  margin-bottom: 2rem;
+}
+
+.menu-section__header h3 {
+  font-size: 1.25rem;
+  color: #b43f3f;
+  margin-bottom: 0.35rem;
+}
+
+.menu-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 1rem;
+}
+
+.menu-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(23, 59, 69, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  box-shadow: 0 12px 20px rgba(23, 59, 69, 0.06);
+}
+
+.menu-card__image {
+  height: 160px;
+  background-color: rgba(255, 130, 37, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-card__placeholder {
+  color: #b43f3f;
+  font-weight: 600;
+}
+
+.menu-card__body {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.menu-card__body h4 {
+  font-size: 1.1rem;
+}
+
+.menu-card__body p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: rgba(23, 59, 69, 0.85);
+}
+
+.menu-card__footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.menu-card__footer .tag {
+  background-color: rgba(255, 130, 37, 0.2);
+  color: #b43f3f;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+}
+
+.menu-card__footer button {
+  background-color: #ff8225;
+  color: #f8eded;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
