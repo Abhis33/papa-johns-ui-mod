@@ -25,6 +25,11 @@ function App() {
       try {
         const response = await fetch(MENU_API_URL, {
           signal: controller.signal,
+          headers: {
+            accept: '*/*',
+            adrum: 'isAjax:true',
+            'x-trpc-source': 'nextjs-react',
+          },
         });
 
         if (!response.ok) {
